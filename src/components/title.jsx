@@ -8,6 +8,7 @@ const Title = () => {
           </span>
           Urls
         </h1>
+        <p className="text-white">-Shrink your urls now-</p>
       </div>
     </>
   );
