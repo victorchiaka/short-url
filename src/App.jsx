@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <div className=" bg-soothblack w-[100%] h-[100%]">
-        <div className="container mx-auto flex flex-col items-center h-[100%] justify-center space-y-4">
+        <div className="container mx-auto h-[90%] flex flex-col items-center justify-center space-y-8">
           <Title />
           <Form />
         </div>

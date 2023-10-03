@@ -10,8 +10,8 @@ function ShortUrl({ shortUrl, isValidShortUrl }) {
 
   if (isValidShortUrl) {
     return (
-      <div className="h-[2.8em] w-[20.3em]">
-        <div className="h-[96%] bg-gray-400 flex flex-row justify-between items-center rounded-full indent-4">
+      <div className="h-[2.8em] w-[21.1em]">
+        <div className="h-[96%] bg-gray-400 flex flex-row justify-between items-center rounded-full indent-2">
           <p className="text-slate-800">{shortUrl}</p>
 
           <CopyToClipboard

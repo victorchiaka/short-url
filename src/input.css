@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Young+Serif&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +8,14 @@ html,
 body,
 #root {
   height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Krona One", sans-serif;
+  font-family: "Young Serif", serif;
 }
