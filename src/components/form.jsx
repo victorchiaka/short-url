@@ -9,12 +9,15 @@ const Form = () => {
     const baseUrl = "http://tinyurl.com/api-create.php";
 
     try {
-      const response = await fetch(`${baseUrl}?url=${longUrl}`);
-      const data = await response.text();
+      const response = await axios.get(`${baseUrl}?url=${longUrl}`);
+      const data = await response.data;
       setShortUrl(data);
     } catch (error) {
       console.error(error);
     }
+
+    console.log("long url", longUrl);
+    console.log("short url", shortUrl);
   }
 
   return (
