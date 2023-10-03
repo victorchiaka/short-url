@@ -1,15 +1,28 @@
 import axios from "axios";
 import { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 function ShortUrl({ shortUrl, isValidShortUrl }) {
+  const [state, setState] = useState({
+    value: "",
+    copied: false,
+  });
+
   if (isValidShortUrl) {
     return (
       <div className="h-[2.8em] w-[20.3em]">
         <div className="h-[96%] bg-gray-400 flex flex-row justify-between items-center rounded-full indent-4">
           <p className="text-slate-800">{shortUrl}</p>
-          <button className="bg-gradient-to-r from-blue-800 to-blue-600 border-2 border-gray-300 text-amber-100 h-full w-[4.2em] rounded-full">
-            copy
-          </button>
+
+          <CopyToClipboard
+            text={shortUrl}
+            onCopy={() => setState({ value: shortUrl, copied: true })}
+          >
+            <button className="bg-gradient-to-r from-blue-800 to-blue-600 border-2 border-gray-300 text-amber-100 h-full w-[4.2em] rounded-full">
+              {state.copied ? <span>copied</span> : <span>copy</span>}
+              {/* copy */}
+            </button>
+          </CopyToClipboard>
         </div>
       </div>
     );
