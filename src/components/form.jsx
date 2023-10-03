@@ -20,7 +20,6 @@ function ShortUrl({ shortUrl, isValidShortUrl }) {
           >
             <button className="bg-gradient-to-r from-blue-800 to-blue-600 border-2 border-gray-300 text-amber-100 h-full w-[4.2em] rounded-full">
               {state.copied ? <span>copied</span> : <span>copy</span>}
-              {/* copy */}
             </button>
           </CopyToClipboard>
         </div>
