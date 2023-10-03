@@ -36,7 +36,7 @@ const Form = () => {
 
   async function handleShrinkUrl() {
     if (longUrl.length > 1) {
-      const baseUrl = "http://tinyurl.com/api-create.php";
+      const baseUrl = "https://tinyurl.com/api-create.php";
 
       try {
         const response = await axios.get(`${baseUrl}?url=${longUrl}`);
