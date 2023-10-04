@@ -4,7 +4,6 @@ const Typewriter = ({ text, delay }) => {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Typing logic goes here
   useEffect(() => {
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {

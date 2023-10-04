@@ -56,7 +56,7 @@ const Form = () => {
             type="text"
             value={longUrl}
             onChange={(e) => setLongUrl(e.target.value)}
-            className="w-[18.3em] h-[2.8em] bg-gray-300 rounded-l-full indent-2 sm:indent-4 sm:w-[21.3em] focus:outline-none"
+            className="w-[16em] h-[2.8em] bg-gray-300 rounded-l-full indent-2 sm:indent-4 sm:w-[21.3em] focus:outline-none"
           />
           <input
             type="button"
