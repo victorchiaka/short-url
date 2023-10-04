@@ -36,7 +36,7 @@ const Title = () => {
         </h1>
         <div className="h-[4em] flex items-center">
           <p className="text-white">
-            <Typewriter text="-Shrink your urls now-" delay={250} infinite />
+            <Typewriter text="-Shrink your url now-" delay={250} infinite />
           </p>
         </div>
       </div>
