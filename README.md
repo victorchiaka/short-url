@@ -1,6 +1,6 @@
 ### This project is live at -- 
 
-```https://victorchiaka.github.io/short-url/```
+[Short Url (:](https://victorchiaka.github.io/short-url/)
 
 <img src="public/preview.png"
      alt="Markdown Monster icon"
@@ -9,22 +9,38 @@
 # short-url
 A url shortener with Tiny URL and react
 
-steps to get this on your machine
+#### Steps to get this on your machine
 
-```git clone https://github.com/victorchiaka/short-url.git```
+- Clone the repository
 
-```cd short-url```
+          git clone https://github.com/victorchiaka/short-url.git
 
-```npm install```
+- Move inside the directory
 
-``` npx tailwindcss -i src/input.css -o dist/output.css```
+          cd short-url
 
-Append ```--watch``` at the end if you're on development else you don't even need this command
+- Install all necessary npm packages
 
-Finally
+          npm install
 
-```npm start```
+- Run tailwind
 
-and visit ```http://192.168.178.120:3000/short-url``` or ```http://localhost:3000/short-url```
+          npx tailwindcss -i src/input.css -o dist/output.css
 
-Now you can shorten your URL in your machine
+     Append --watch at the end if you're on development else you don't to append
+
+##### Finally
+
+- Start the server
+
+          npm start
+
+     - And visit
+
+               http://192.168.178.120:3000/short-url
+          or
+
+               http://localhost:3000/short-url
+
+
+`Now you can shorten your URL right on your machine (:`
